@@ -4,7 +4,7 @@
     /* Colors */
     --primary-dark-blue: hsl(233, 26%, 24%);
     --primary-lime-green: hsl(136, 65%, 51%);
-    --primary-bright-cyan: hsl(192, 70%, 51%)
+    --primary-bright-cyan: hsl(192, 70%, 51%);
  
     --neutral-grayish-blue: hsl(233, 8%, 62%);
     --neutral-light-grayish-blue: hsl(220, 16%, 96%);
@@ -23,10 +23,13 @@
 }
 
 /* CLASES GENERALES     */
-.btn-primary{}
-
-.info-text {
-
+.btn-primary{
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 2.5rem;
+    background: linear-gradient(to left,  var(--primary-bright-cyan), var(--primary-lime-green));
+    color: white;
+    font-weight: var(--bold);
 }
 
 body {
@@ -36,11 +39,14 @@ body {
 
 /* NAVBAR */
 .navbar-container{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     height: 4.5rem;
-    background-color: white;
-    position: relative;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden; 
 }
 .navbar__brand {
     display: flex;
@@ -51,7 +57,7 @@ body {
     position: absolute;
     top: 5rem;
     width: 100%;
-    left: 100%;
+    right: -100%;
 }
 .navbar__menu {
     width: 90%;
@@ -79,3 +85,37 @@ body {
 .menu-active {
     left: 0;
 }
+
+/* HEADER */
+header {
+    margin-top: 4.5rem;
+    text-align: center;
+}
+.header__banner{
+    background: url('../images/bg-intro-mobile.svg') no-repeat;
+    background-size: cover;
+}
+.header__banner img {
+    width: 100%;
+    padding: 1rem;
+}
+.header__title {
+    color: var(--primary-dark-blue);
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: var(--regular);
+}
+
+.header__info {
+    color: var(--neutral-grayish-blue);
+    margin-top: 1.3rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.header__button {
+    margin-top: 2rem;
+}
+
+/* SECTION -> WHY CHOOSE EASYBANK */
