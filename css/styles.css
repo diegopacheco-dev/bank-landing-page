@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root{
+    /* Colors */
+    --primary-dark-blue: hsl(233, 26%, 24%);
+    --primary-lime-green: hsl(136, 65%, 51%);
+    --primary-bright-cyan: hsl(192, 70%, 51%)
+ 
+    --neutral-grayish-blue: hsl(233, 8%, 62%);
+    --neutral-light-grayish-blue: hsl(220, 16%, 96%);
+    --neutral-very-light: hsl(0, 0%, 98%);
+
+    /* Font-weight */
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CLASES GENERALES     */
+.btn-primary{}
+
+.info-text {
+
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    background-color: white;
+    position: relative;   
+}
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem 0;
+}
+.navbar__menu-container {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    left: 100%;
+}
+.navbar__menu {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1.2rem 0;
+    border-radius: 0.3rem;
+}
+.menu__item {
+    text-align: center;
+    padding: 0.8rem;
+    list-style: none;
+}
+
+.navbar__button {
+    display: none;
+}
+.navbar__toggler button {
+    width: 3rem;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 1.8rem;
+}
+.menu-active {
+    left: 0;
+}
