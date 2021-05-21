@@ -31,6 +31,13 @@
     color: white;
     font-weight: var(--bold);
 }
+.text-info {
+    color: var(--neutral-grayish-blue);
+    font-weight: var(--regular);
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
 
 body {
     font-size: 18px;
@@ -90,6 +97,7 @@ body {
 header {
     margin-top: 4.5rem;
     text-align: center;
+    padding-bottom: 5rem;
 }
 .header__banner{
     background: url('../images/bg-intro-mobile.svg') no-repeat;
@@ -119,3 +127,37 @@ header {
 }
 
 /* SECTION -> WHY CHOOSE EASYBANK */
+.whyChoose {
+    background: var(--neutral-very-light);
+    padding-top: 3.8rem;
+    text-align: center;
+}
+.whyChoose__title {
+    color: var(--primary-dark-blue);
+    font-weight: var(--regular);
+    width: 50%;
+    margin: 0 auto;
+}
+.whyChoose__info {
+    margin: 1.3rem auto 0;
+    width: 90%;
+
+}
+.whyChoose__reasons {
+    margin-top: 3.2rem;
+}
+.reason {
+    margin-top: 2rem;
+}
+.reason__title {
+    margin-top: 1.4rem;;
+    font-size: 1.3rem;
+    color: var(--primary-dark-blue);
+    font-weight: var(--regular);
+}
+.reason__info {
+    margin: 1rem auto 0;
+    width: 86%;
+}
+
+/* SECTION LATEST ARTICLES */
